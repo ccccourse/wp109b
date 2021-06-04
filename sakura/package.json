@@ -1,0 +1,41 @@
+{
+  "name": "sakura.css",
+  "version": "1.3.1",
+  "description": "A minimal classless css theme. Just drop it in and watch the website blossom!",
+  "main": "css/sakura.css",
+  "scripts": {
+    "bookmarklet": "mkdir -p dist && bookmarklet ./src/bookmarklet.js ./dist/bookmarklet.js",
+    "scss": "node-sass scss -o css",
+    "scss:watch": "node-sass scss -o css -w",
+    "build": "npm run bookmarklet",
+    "test": "npx http-server"
+  },
+  "files": [
+    "css",
+    "scss",
+    "package.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oxalorg/sakura.git"
+  },
+  "keywords": [
+    "css",
+    "theme",
+    "classless",
+    "web-design",
+    "minimal",
+    "default",
+    "reset"
+  ],
+  "author": "Mitesh Shah <mitesh@oxal.org> (https://oxal.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oxalorg/sakura/issues"
+  },
+  "homepage": "https://oxal.org/projects/sakura/",
+  "devDependencies": {
+    "bookmarklet": "0.0.6",
+    "node-sass": "^4.5.2"
+  }
+}
